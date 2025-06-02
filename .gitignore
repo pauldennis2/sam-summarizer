@@ -1,0 +1,54 @@
+# samsum dataset
+samsum_csv_data/
+
+# Python
+__pycache__/
+*.pyc
+*.pyd
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+.pytest_cache/
+.tox/
+.mypy_cache/
+.hypothesis/
+pip-log.txt
+pip-delete-this-arg.txt
+.env
+.flaskenv
+
+# Editor/IDE files
+.vscode/ # VS Code
+.idea/   # IntelliJ / PyCharm
+*.sublime-project
+*.sublime-workspace
+*.swp    # Vim swap files
+*~       # Emacs backup files
+
+# OS generated files
+.DS_Store # macOS
+.Trashes  # macOS
+Thumbs.db # Windows
+ehthumbs.db # Windows
+Desktop.ini # Windows
+
+# Jupyter Notebook files
+.ipynb_checkpoints/
+*.ipynb-filter
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Build artifacts
+build/
+dist/
+
+# Docker-related (if not intended to be part of the image context)
+# For example, if you save container volumes here, or downloaded images
+# You might want to be more specific here depending on your Docker setup
+# docker_volumes/
+# downloaded_docker_images/
