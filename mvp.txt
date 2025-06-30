@@ -1,0 +1,9 @@
+Updates from Pitch:
+
+No changes since pitch submission.
+
+Accomplishments:
+My initial modeling efforts focused on fine-tuning a pre-trained BART model for conversational summarization using a subset of the SAMSum dataset. I successfully established an end-to-end data processing and model training pipeline, using GPU acceleration to manage the computational demands of the Transformer architecture. This pipeline enabled efficient tokenization, batching, and training loop execution. With GPU acceleration, I was able to train the BART model on a dataset of 500 samples within a reasonable timeframe, achieving a ROUGE-1 score of 63.5. This demonstrated the foundational capability of applying large language models to this specific summarization task, even with limited data.
+
+Opportunity for Growth & Feedback Request:
+The primary challenge I encountered has been scaling the training process to a larger portion of the SAMSum dataset due to significant GPU memory constraints. Despite implementing standard memory-saving techniques like a per-device batch size of 1, FP16 training, and gradient checkpointing, my attempts to train on datasets larger than 500 samples consistently resulted in CUDA out-of-memory errors on my local hardware. This demonstrates the critical interplay of model size, sequence length, and available GPU memory: even highly optimized training strategies have hard physical limits. While my current solution involves capping the dataset size for this MVP, I am actively considering future approaches for broader data utilization. I'd appreciate feedback on practical strategies to resolve the GPU memory issues within my current BART approach.
